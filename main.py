@@ -12,7 +12,6 @@ with open("Star_Data.csv", "r") as f:
         rows.append(row)
 
 
-headers = rows[0]
 star_data = rows[1:]
 
 mass = []
@@ -31,8 +30,6 @@ for data in star_data:
     gravity.append(data[5])
     mass.append(data[3])
     radius.append(data[4])
-
-print('creating graph...')
 
 
 mass.sort()
